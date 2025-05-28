@@ -171,9 +171,11 @@ class BatchTester:
         
         # Test 5: Update course (if we have an ID)
         if iteration_results['created_course_id']:
+            import time
+            update_counter = int(time.time() * 1000) % 10000
             update_data = {
-                "name": f"Updated Course {self.iteration_count}",
-                "syllabus": f"Updated syllabus for iteration {self.iteration_count}"
+                "name": f"Updated Course {self.iteration_count} -v{update_counter}",
+                "syllabus": f"Updated syllabus for iteration {self.iteration_count} -version {update_counter}" 
             }
             result, response = self.test_endpoint('PUT', f"/{iteration_results['created_course_id']}", data=update_data, expected_status=200, description="Update course")
             iteration_results['tests'].append(result)
