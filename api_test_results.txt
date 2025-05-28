@@ -1,0 +1,1310 @@
+================================================================================
+FLASK API BATCH TEST RESULTS
+================================================================================
+
+SUMMARY:
+----------------------------------------
+[16:53:25.130] INFO: === BATCH API TESTER STARTED ===================================================
+[16:53:25.130] INFO: Start time: 2025-05-28 16:53:25.130283
+[16:53:25.130] INFO: Number of iterations: 10
+[16:53:25.130] INFO: Target URL: http://localhost:5000/api/courses
+[16:53:25.130] INFO: Delay between iterations: 2 seconds
+[16:53:25.130] INFO: === INITIAL CONNECTION TEST ====================================================
+[16:53:25.134] INFO: ✅ Server connection successful: 200
+[16:53:25.134] INFO: === ITERATION 1 ================================================================
+[16:53:25.138] INFO: ✅ Get all courses (initial): 200 (4ms)
+[16:53:25.138] INFO: Initial courses count: 15
+[16:53:25.145] INFO: ✅ Create course: 201 (7ms)
+[16:53:25.146] INFO: Created course ID: 6837155562f61b4a070d7819
+[16:53:25.148] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:25.148] INFO: Courses count after creation: 16
+[16:53:25.151] INFO: ✅ Get single course: 200 (2ms)
+[16:53:25.154] INFO: ❌ Update course: 409 (2ms)
+[16:53:25.158] INFO: ✅ Delete course: 200 (4ms)
+[16:53:25.160] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:25.161] INFO: Final courses count: 15
+[16:53:25.162] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:25.165] INFO: ✅ Test validation: 400 (2ms)
+[16:53:25.165] INFO: Iteration 1 Summary: 8/9 passed, 1 failed
+[16:53:25.165] INFO: Waiting 2 seconds before next iteration...
+[16:53:27.166] INFO: === ITERATION 2 ================================================================
+[16:53:27.171] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:27.171] INFO: Initial courses count: 15
+[16:53:27.177] INFO: ✅ Create course: 201 (6ms)
+[16:53:27.178] INFO: Created course ID: 6837155762f61b4a070d781a
+[16:53:27.180] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:27.180] INFO: Courses count after creation: 16
+[16:53:27.182] INFO: ✅ Get single course: 200 (2ms)
+[16:53:27.185] INFO: ❌ Update course: 409 (2ms)
+[16:53:27.189] INFO: ✅ Delete course: 200 (3ms)
+[16:53:27.191] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:27.191] INFO: Final courses count: 15
+[16:53:27.193] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:27.196] INFO: ✅ Test validation: 400 (2ms)
+[16:53:27.196] INFO: Iteration 2 Summary: 8/9 passed, 1 failed
+[16:53:27.196] INFO: Waiting 2 seconds before next iteration...
+[16:53:31.973] INFO: === ITERATION 3 ================================================================
+[16:53:31.979] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:31.979] INFO: Initial courses count: 15
+[16:53:31.986] INFO: ✅ Create course: 201 (6ms)
+[16:53:31.986] INFO: Created course ID: 6837155b62f61b4a070d781b
+[16:53:31.989] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:31.989] INFO: Courses count after creation: 16
+[16:53:31.991] INFO: ✅ Get single course: 200 (2ms)
+[16:53:31.994] INFO: ❌ Update course: 409 (3ms)
+[16:53:31.999] INFO: ✅ Delete course: 200 (4ms)
+[16:53:32.001] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:32.001] INFO: Final courses count: 15
+[16:53:32.003] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:32.006] INFO: ✅ Test validation: 400 (2ms)
+[16:53:32.006] INFO: Iteration 3 Summary: 8/9 passed, 1 failed
+[16:53:32.006] INFO: Waiting 2 seconds before next iteration...
+[16:53:34.006] INFO: === ITERATION 4 ================================================================
+[16:53:34.010] INFO: ✅ Get all courses (initial): 200 (3ms)
+[16:53:34.010] INFO: Initial courses count: 15
+[16:53:34.016] INFO: ✅ Create course: 201 (6ms)
+[16:53:34.016] INFO: Created course ID: 6837155e62f61b4a070d781c
+[16:53:34.019] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:34.019] INFO: Courses count after creation: 16
+[16:53:34.021] INFO: ✅ Get single course: 200 (2ms)
+[16:53:34.025] INFO: ❌ Update course: 409 (3ms)
+[16:53:34.028] INFO: ✅ Delete course: 200 (3ms)
+[16:53:34.032] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[16:53:34.032] INFO: Final courses count: 15
+[16:53:34.034] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:34.036] INFO: ✅ Test validation: 400 (2ms)
+[16:53:34.036] INFO: Iteration 4 Summary: 8/9 passed, 1 failed
+[16:53:34.037] INFO: Waiting 2 seconds before next iteration...
+[16:53:36.037] INFO: === ITERATION 5 ================================================================
+[16:53:36.040] INFO: ✅ Get all courses (initial): 200 (3ms)
+[16:53:36.040] INFO: Initial courses count: 15
+[16:53:36.048] INFO: ✅ Create course: 201 (7ms)
+[16:53:36.048] INFO: Created course ID: 6837156062f61b4a070d781d
+[16:53:36.051] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:36.051] INFO: Courses count after creation: 16
+[16:53:36.054] INFO: ✅ Get single course: 200 (2ms)
+[16:53:36.058] INFO: ❌ Update course: 409 (3ms)
+[16:53:36.062] INFO: ✅ Delete course: 200 (3ms)
+[16:53:36.065] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:36.065] INFO: Final courses count: 15
+[16:53:36.067] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:36.071] INFO: ✅ Test validation: 400 (3ms)
+[16:53:36.071] INFO: Iteration 5 Summary: 8/9 passed, 1 failed
+[16:53:36.071] INFO: Waiting 2 seconds before next iteration...
+[16:53:38.071] INFO: === ITERATION 6 ================================================================
+[16:53:38.077] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:38.077] INFO: Initial courses count: 15
+[16:53:38.085] INFO: ✅ Create course: 201 (8ms)
+[16:53:38.085] INFO: Created course ID: 6837156262f61b4a070d781e
+[16:53:38.088] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:38.088] INFO: Courses count after creation: 16
+[16:53:38.090] INFO: ✅ Get single course: 200 (2ms)
+[16:53:38.093] INFO: ❌ Update course: 409 (2ms)
+[16:53:38.096] INFO: ✅ Delete course: 200 (2ms)
+[16:53:38.099] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[16:53:38.099] INFO: Final courses count: 15
+[16:53:38.101] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[16:53:38.104] INFO: ✅ Test validation: 400 (2ms)
+[16:53:38.104] INFO: Iteration 6 Summary: 8/9 passed, 1 failed
+[16:53:38.104] INFO: Waiting 2 seconds before next iteration...
+[16:53:40.104] INFO: === ITERATION 7 ================================================================
+[16:53:40.110] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:40.110] INFO: Initial courses count: 15
+[16:53:40.116] INFO: ✅ Create course: 201 (6ms)
+[16:53:40.116] INFO: Created course ID: 6837156462f61b4a070d781f
+[16:53:40.119] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:40.119] INFO: Courses count after creation: 16
+[16:53:40.123] INFO: ✅ Get single course: 200 (3ms)
+[16:53:40.127] INFO: ❌ Update course: 409 (3ms)
+[16:53:40.130] INFO: ✅ Delete course: 200 (2ms)
+[16:53:40.132] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:40.132] INFO: Final courses count: 15
+[16:53:40.134] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:40.138] INFO: ✅ Test validation: 400 (4ms)
+[16:53:40.138] INFO: Iteration 7 Summary: 8/9 passed, 1 failed
+[16:53:40.138] INFO: Waiting 2 seconds before next iteration...
+[16:53:42.139] INFO: === ITERATION 8 ================================================================
+[16:53:42.144] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:42.144] INFO: Initial courses count: 15
+[16:53:42.151] INFO: ✅ Create course: 201 (6ms)
+[16:53:42.151] INFO: Created course ID: 6837156662f61b4a070d7820
+[16:53:42.153] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:42.153] INFO: Courses count after creation: 16
+[16:53:42.156] INFO: ✅ Get single course: 200 (2ms)
+[16:53:42.159] INFO: ❌ Update course: 409 (3ms)
+[16:53:42.163] INFO: ✅ Delete course: 200 (4ms)
+[16:53:42.165] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:42.165] INFO: Final courses count: 15
+[16:53:42.167] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:42.170] INFO: ✅ Test validation: 400 (2ms)
+[16:53:42.170] INFO: Iteration 8 Summary: 8/9 passed, 1 failed
+[16:53:42.170] INFO: Waiting 2 seconds before next iteration...
+[16:53:44.170] INFO: === ITERATION 9 ================================================================
+[16:53:44.176] INFO: ✅ Get all courses (initial): 200 (5ms)
+[16:53:44.176] INFO: Initial courses count: 15
+[16:53:44.182] INFO: ✅ Create course: 201 (6ms)
+[16:53:44.182] INFO: Created course ID: 6837156862f61b4a070d7821
+[16:53:44.185] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:44.185] INFO: Courses count after creation: 16
+[16:53:44.188] INFO: ✅ Get single course: 200 (2ms)
+[16:53:44.191] INFO: ❌ Update course: 409 (2ms)
+[16:53:44.193] INFO: ✅ Delete course: 200 (2ms)
+[16:53:44.195] INFO: ✅ Get all courses (after delete): 200 (1ms)
+[16:53:44.195] INFO: Final courses count: 15
+[16:53:44.197] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[16:53:44.201] INFO: ✅ Test validation: 400 (4ms)
+[16:53:44.201] INFO: Iteration 9 Summary: 8/9 passed, 1 failed
+[16:53:44.201] INFO: Waiting 2 seconds before next iteration...
+[16:53:46.202] INFO: === ITERATION 10 ===============================================================
+[16:53:46.206] INFO: ✅ Get all courses (initial): 200 (4ms)
+[16:53:46.206] INFO: Initial courses count: 15
+[16:53:46.212] INFO: ✅ Create course: 201 (5ms)
+[16:53:46.212] INFO: Created course ID: 6837156a62f61b4a070d7822
+[16:53:46.214] INFO: ✅ Get all courses (after create): 200 (2ms)
+[16:53:46.215] INFO: Courses count after creation: 16
+[16:53:46.218] INFO: ✅ Get single course: 200 (3ms)
+[16:53:46.221] INFO: ❌ Update course: 409 (2ms)
+[16:53:46.224] INFO: ✅ Delete course: 200 (2ms)
+[16:53:46.226] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[16:53:46.226] INFO: Final courses count: 15
+[16:53:46.228] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[16:53:46.233] INFO: ✅ Test validation: 400 (4ms)
+[16:53:46.233] INFO: Iteration 10 Summary: 8/9 passed, 1 failed
+[16:53:46.233] INFO: === BATCH TEST SUMMARY =========================================================
+[16:53:46.233] INFO: End time: 2025-05-28 16:53:46.233349
+[16:53:46.233] INFO: Total duration: 0:00:21.103066
+[16:53:46.233] INFO: Completed iterations: 10
+[16:53:46.233] INFO: Total tests run: 90
+[16:53:46.233] INFO: Total passed: 80
+[16:53:46.233] INFO: Total failed: 10
+[16:53:46.233] INFO: Overall success rate: 88.9%
+[16:53:46.233] INFO: === CONSISTENCY ANALYSIS =======================================================
+[16:53:46.233] INFO: ✅ All iterations had consistent results
+
+
+================================================================================
+DETAILED ITERATION DATA (JSON):
+================================================================================
+
+[
+  {
+    "iteration": 1,
+    "start_time": "2025-05-28T16:53:25.134381",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:25.134398",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:25.138545",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"6837155562f61b4a070d7819\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-28 16:53:25.138537\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:25.146114",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837155562f61b4a070d7819",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:25.148858",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837155562f61b4a070d7819\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-28 16:53:25.138537\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837155562f61b4a070d7819",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:25.151467",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837155562f61b4a070d7819",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:25.154427",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"message\": \"Test Course 1 has been deleted\", \"deleted\": {\"_id\": \"6837155562f61b4a070d7819\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-28 16:53:25.138537\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:25.158622",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:25.161094",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:25.162739",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837155562f61b4a070d7819",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:25.165668"
+  },
+  {
+    "iteration": 2,
+    "start_time": "2025-05-28T16:53:27.165998",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:27.166214",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:27.171723",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837155762f61b4a070d781a\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-28 16:53:27.171703\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:27.178058",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837155762f61b4a070d781a",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:27.180408",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837155762f61b4a070d781a\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-28 16:53:27.171703\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837155762f61b4a070d781a",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:27.182669",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837155762f61b4a070d781a",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:27.185250",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Test Course 2 has been deleted\", \"deleted\": {\"_id\": \"6837155762f61b4a070d781a\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-28 16:53:27.171703\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:27.189134",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:27.191888",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:27.193536",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837155762f61b4a070d781a",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:27.196203"
+  },
+  {
+    "iteration": 3,
+    "start_time": "2025-05-28T16:53:31.973771",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:31.973856",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:31.979796",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837155b62f61b4a070d781b\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-28 16:53:31.979790\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:31.986654",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837155b62f61b4a070d781b",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:31.989382",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837155b62f61b4a070d781b\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-28 16:53:31.979790\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837155b62f61b4a070d781b",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:31.991695",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837155b62f61b4a070d781b",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:31.995002",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"message\": \"Test Course 3 has been deleted\", \"deleted\": {\"_id\": \"6837155b62f61b4a070d781b\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-28 16:53:31.979790\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:31.999316",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:32.001862",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:32.003630",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837155b62f61b4a070d781b",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:32.006581"
+  },
+  {
+    "iteration": 4,
+    "start_time": "2025-05-28T16:53:34.006891",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:34.007021",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:34.010621",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837155e62f61b4a070d781c\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-28 16:53:34.010615\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:34.017021",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837155e62f61b4a070d781c",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:34.019654",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837155e62f61b4a070d781c\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-28 16:53:34.010615\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837155e62f61b4a070d781c",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:34.021831",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837155e62f61b4a070d781c",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:34.025254",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Test Course 4 has been deleted\", \"deleted\": {\"_id\": \"6837155e62f61b4a070d781c\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-28 16:53:34.010615\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:34.028765",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:34.032360",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:34.034116",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837155e62f61b4a070d781c",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:34.036957"
+  },
+  {
+    "iteration": 5,
+    "start_time": "2025-05-28T16:53:36.037206",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:36.037299",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:36.040531",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"6837156062f61b4a070d781d\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-28 16:53:36.040523\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:36.048354",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156062f61b4a070d781d",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:36.051258",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837156062f61b4a070d781d\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-28 16:53:36.040523\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156062f61b4a070d781d",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:36.054427",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156062f61b4a070d781d",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:36.058501",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Test Course 5 has been deleted\", \"deleted\": {\"_id\": \"6837156062f61b4a070d781d\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-28 16:53:36.040523\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:36.062608",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:36.065582",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:36.067496",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 3,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156062f61b4a070d781d",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:36.071083"
+  },
+  {
+    "iteration": 6,
+    "start_time": "2025-05-28T16:53:38.071413",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:38.071653",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:38.077696",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 8,
+        "response_text": "{\"_id\": \"6837156262f61b4a070d781e\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-28 16:53:38.077688\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:38.085881",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156262f61b4a070d781e",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:38.088535",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837156262f61b4a070d781e\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-28 16:53:38.077688\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156262f61b4a070d781e",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:38.090868",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156262f61b4a070d781e",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:38.093756",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Test Course 6 has been deleted\", \"deleted\": {\"_id\": \"6837156262f61b4a070d781e\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-28 16:53:38.077688\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:38.096095",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:38.099714",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:38.101814",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156262f61b4a070d781e",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:38.104685"
+  },
+  {
+    "iteration": 7,
+    "start_time": "2025-05-28T16:53:40.104927",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:40.105162",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:40.110850",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837156462f61b4a070d781f\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-28 16:53:40.110842\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:40.116997",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156462f61b4a070d781f",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:40.119867",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"6837156462f61b4a070d781f\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-28 16:53:40.110842\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156462f61b4a070d781f",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:40.123780",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156462f61b4a070d781f",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:40.127569",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Test Course 7 has been deleted\", \"deleted\": {\"_id\": \"6837156462f61b4a070d781f\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-28 16:53:40.110842\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:40.130379",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:40.132555",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:40.134145",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 4,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156462f61b4a070d781f",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:40.138630"
+  },
+  {
+    "iteration": 8,
+    "start_time": "2025-05-28T16:53:42.139078",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:42.139284",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:42.144743",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837156662f61b4a070d7820\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-28 16:53:42.144737\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:42.151447",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156662f61b4a070d7820",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:42.153821",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837156662f61b4a070d7820\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-28 16:53:42.144737\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156662f61b4a070d7820",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:42.156081",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156662f61b4a070d7820",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:42.159561",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"message\": \"Test Course 8 has been deleted\", \"deleted\": {\"_id\": \"6837156662f61b4a070d7820\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-28 16:53:42.144737\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:42.163672",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:42.165971",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:42.167653",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156662f61b4a070d7820",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:42.170625"
+  },
+  {
+    "iteration": 9,
+    "start_time": "2025-05-28T16:53:44.170795",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:44.170954",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 5,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:44.176115",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"6837156862f61b4a070d7821\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-28 16:53:44.176109\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:44.182353",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156862f61b4a070d7821",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:44.185522",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"6837156862f61b4a070d7821\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-28 16:53:44.176109\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156862f61b4a070d7821",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:44.188333",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156862f61b4a070d7821",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:44.191293",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Test Course 9 has been deleted\", \"deleted\": {\"_id\": \"6837156862f61b4a070d7821\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-28 16:53:44.176109\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:44.193510",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 1,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:44.195444",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:44.197538",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 4,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156862f61b4a070d7821",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:44.201886"
+  },
+  {
+    "iteration": 10,
+    "start_time": "2025-05-28T16:53:46.202506",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-28T16:53:46.202692",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-28T16:53:46.206915",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 5,
+        "response_text": "{\"_id\": \"6837156a62f61b4a070d7822\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-28 16:53:46.206910\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-28T16:53:46.212187",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/6837156a62f61b4a070d7822",
+        "description": "Get single course",
+        "timestamp": "2025-05-28T16:53:46.215043",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"6837156a62f61b4a070d7822\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-28 16:53:46.206910\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/6837156a62f61b4a070d7822",
+        "description": "Update course",
+        "timestamp": "2025-05-28T16:53:46.218627",
+        "success": false,
+        "status_code": 409,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Another course with this name already exists\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/6837156a62f61b4a070d7822",
+        "description": "Delete course",
+        "timestamp": "2025-05-28T16:53:46.221602",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Test Course 10 has been deleted\", \"deleted\": {\"_id\": \"6837156a62f61b4a070d7822\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-28 16:53:46.206910\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-28T16:53:46.224434",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"68370d2fbcc8963f77726ae9\", \"name\": \"Advanced Python Programming\", \"syllabus\": \"Updated syllabus with advanced topics\"}, {\"_id\": \"68370d2fbcc8963f77726aea\", \"name\": \"JavaScript Fundamentals\", \"syllabus\": \"Modern JS, ES6+, async programming\"}, {\"_id\": \"68370d2fbcc8963f77726aeb\", \"name\": \"Database Design\", \"syllabus\": \"SQL, NoSQL, MongoDB, optimization\"}, {\"_id\": \"68370d2fbcc8963f77726aec\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course\"}, {\"_id\": \"68370dbfa9e15d1db19aa662\", \"...",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-28T16:53:46.226744",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course ID\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation",
+        "timestamp": "2025-05-28T16:53:46.228378",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 4,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      }
+    ],
+    "created_course_id": "6837156a62f61b4a070d7822",
+    "summary": {
+      "total": 9,
+      "passed": 8,
+      "failed": 1
+    },
+    "end_time": "2025-05-28T16:53:46.233246"
+  }
+]

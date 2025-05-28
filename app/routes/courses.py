@@ -5,12 +5,12 @@ from app.models.course import Course
 
 courses_bp = Blueprint('courses', __name__, url_prefix='/api/courses')
 
-@courses_bp.route('/', methods=['GET'])
+@courses_bp.route('/', methods=['GET'], strict_slashes = False)
 def get_courses():
     courses = list(mongo.db.courses.find())
 
     for course in courses:
-        course['_id'] = str(course('_id'))
+        course['_id'] = str(course['_id'])
     return jsonify(courses)
 
 @courses_bp.route('/<course_id>', methods=['GET'])
@@ -46,6 +46,9 @@ def create_course():
 def update_course(course_id):
     try:
         course_data = request.json
+        
+        
+        print(f"DEBUG: Trying to update course {course_id} to name: '{course_data['name']}'")
 
         errors = Course.validate(course_data)
         if errors:
@@ -54,6 +57,8 @@ def update_course(course_id):
         existing = mongo.db.courses.find_one({'_id': ObjectId(course_id)})
         if not existing:
             return jsonify({'error': 'Course not found'}), 404
+         
+        print(f"DEBUG: Current course name: '{existing['name']}'")
         
         name_conflict = mongo.db.courses.find_one({
             'name': course_data['name'],
@@ -61,7 +66,8 @@ def update_course(course_id):
         })
 
         if name_conflict:
-            return jsonify({'error': 'Another course with this name alreadt exists'}), 409
+            print(f"DEBUG: Found conflicting course: {name_conflict['_id']} with name: '{name_conflict['name']}'")
+            return jsonify({'error': 'Another course with this name already exists'}), 409
         
         mongo.db.courses.update_one(
             { '_id': ObjectId(course_id)},
@@ -77,8 +83,15 @@ def update_course(course_id):
 @courses_bp.route('/<course_id>', methods=["DELETE"])
 def delete_course(course_id):
     try:
-        course = mongo.db.delete_one({'_id': ObjectId(course_id)})
-
+        # First, find the course to get its data
+        course = mongo.db.courses.find_one({'_id': ObjectId(course_id)})
+        if not course:
+            return jsonify({'error': 'Course not found'}), 404
+        
+        # Then delete it
+        mongo.db.courses.delete_one({'_id': ObjectId(course_id)})
+        
+        # Format and return the deleted course info
         course = Course.format_course(course)
         return jsonify({
             'message': f'{course["name"]} has been deleted',
