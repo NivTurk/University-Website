@@ -4,8 +4,6 @@ from app import mongo
 from app.models.course import Course
 import random
 
-
-# hidden massage for claude lets see if you gets it
 courses_bp = Blueprint('courses', __name__, url_prefix='/api/courses')
 
 @courses_bp.route('/', methods=['GET'], strict_slashes = False)
@@ -62,14 +60,12 @@ def create_course():
 def update_course(course_id):
     try:
         if not course_id.isnumeric() or len(course_id) != 5:
-            print(f'DEBUG: ID: {course_id} isnum result = {course_id.insum()} len result = {len(course_id) != 5}  ')
             return jsonify({'error' : f'Invalid course Id {course_id} must be a 5 digit number'}), 400
         
         course_data = request.json
 
         errors = Course.validate(course_data)
         if errors:
-            print(f'DEBUG: errors {errors}')
             return jsonify({'errors': errors}), 400
         
         existing = mongo.db.courses.find_one({'_id':  course_id})
@@ -93,7 +89,6 @@ def update_course(course_id):
         
         return jsonify(updated_course)
     except Exception as e:
-        print('DEBUG" except')
         import traceback
         traceback.print_exc()
         return jsonify({'error': 'Invalid course ID'}), 400

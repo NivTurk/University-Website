@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Batch API Tester - Runs multiple test iterations and saves results to file
+Flask API Tester - Updated for Current Project Version
 
-This script runs your API tests multiple times to identify inconsistencies
-and saves detailed results to a file for analysis.
+This script tests your Flask API endpoints with the actual data structure
+and response formats used in your current implementation.
 
 Usage:
-    python3 batch_tester.py
+    python3 api_tester.py
 
 Output:
     - Creates api_test_results.txt with detailed results
@@ -21,12 +21,13 @@ import sys
 import traceback
 
 # Configuration
+VERSION = "2.0.0"
 BASE_URL = "http://localhost:5000/api/courses"
 HEADERS = {'Content-Type': 'application/json'}
-NUM_ITERATIONS = 10  # Number of full test cycles to run
-DELAY_BETWEEN_ITERATIONS = 2  # Seconds to wait between iterations
+NUM_ITERATIONS = 10
+DELAY_BETWEEN_ITERATIONS = 2
 
-class BatchTester:
+class APITester:
     def __init__(self, output_file="api_test_results.txt"):
         self.output_file = output_file
         self.results = []
@@ -37,11 +38,7 @@ class BatchTester:
         """Log message to both console and results"""
         timestamp = datetime.datetime.now().strftime("%H:%M:%S.%f")[:-3]
         log_entry = f"[{timestamp}] {level}: {message}"
-        
-        # Print to console
         print(log_entry)
-        
-        # Add to results
         self.results.append(log_entry)
     
     def log_separator(self, title=""):
@@ -70,7 +67,6 @@ class BatchTester:
         try:
             start_time = time.time()
             
-            # Make the request
             if method == 'GET':
                 response = requests.get(url, timeout=10)
             elif method == 'POST':
@@ -83,20 +79,17 @@ class BatchTester:
                 raise ValueError(f"Unsupported method: {method}")
             
             end_time = time.time()
-            response_time = int((end_time - start_time) * 1000)  # Convert to milliseconds
+            response_time = int((end_time - start_time) * 1000)
             
-            # Record results
             test_result['status_code'] = response.status_code
             test_result['response_time_ms'] = response_time
             test_result['response_text'] = response.text[:500] + ('...' if len(response.text) > 500 else '')
             
-            # Check if test passed
             if expected_status:
                 test_result['success'] = response.status_code == expected_status
             else:
                 test_result['success'] = 200 <= response.status_code < 300
             
-            # Log result
             status_icon = "✅" if test_result['success'] else "❌"
             self.log(f"{status_icon} {description}: {response.status_code} ({response_time}ms)")
             
@@ -133,10 +126,10 @@ class BatchTester:
             except:
                 self.log("Failed to parse initial courses JSON", "WARNING")
         
-        # Test 2: Create a new course
+        # Test 2: Create a new course (using correct field name 'syllabus')
         course_data = {
             "name": f"Test Course {self.iteration_count}",
-            "syllabus": f"Syllabus for iteration {self.iteration_count} created at {datetime.datetime.now()}"
+            "syllabus": f"Test syllabus for iteration {self.iteration_count} created at {datetime.datetime.now()}"
         }
         
         result, response = self.test_endpoint('POST', '', data=course_data, expected_status=201, description="Create course")
@@ -171,11 +164,9 @@ class BatchTester:
         
         # Test 5: Update course (if we have an ID)
         if iteration_results['created_course_id']:
-            import time
-            update_counter = int(time.time() * 1000) % 10000
             update_data = {
-                "name": f"Updated Course {self.iteration_count} -v{update_counter}",
-                "syllabus": f"Updated syllabus for iteration {self.iteration_count} -version {update_counter}" 
+                "name": f"Updated Course {self.iteration_count}",
+                "syllabus": f"Updated syllabus for iteration {self.iteration_count}"
             }
             result, response = self.test_endpoint('PUT', f"/{iteration_results['created_course_id']}", data=update_data, expected_status=200, description="Update course")
             iteration_results['tests'].append(result)
@@ -198,14 +189,55 @@ class BatchTester:
             except:
                 self.log("Failed to parse final courses JSON", "WARNING")
         
-        # Test 8: Test error handling
+        # Test 8: Test invalid ID error handling
         result, response = self.test_endpoint('GET', '/invalid_id', expected_status=400, description="Test invalid ID handling")
         iteration_results['tests'].append(result)
         
-        # Test 9: Test validation
+        # Test 9: Test validation errors
         invalid_data = {"name": "AB"}  # Too short, missing syllabus
-        result, response = self.test_endpoint('POST', '', data=invalid_data, expected_status=400, description="Test validation")
+        result, response = self.test_endpoint('POST', '', data=invalid_data, expected_status=400, description="Test validation errors")
         iteration_results['tests'].append(result)
+        
+        # Test 10: Test duplicate name handling
+        if len(initial_courses) > 0:
+            # Try to create a course with the same name as an existing one
+            duplicate_data = {
+                "name": initial_courses[0]['name'] if initial_courses else "Test Course 1",
+                "syllabus": "This should fail due to duplicate name"
+            }
+            result, response = self.test_endpoint('POST', '', data=duplicate_data, expected_status=409, description="Test duplicate name handling")
+            iteration_results['tests'].append(result)
+        else:
+            # Create a course and then try to create another with the same name
+            temp_course_data = {
+                "name": "Duplicate Test Course",
+                "syllabus": "First course for duplicate test"
+            }
+            result, response = self.test_endpoint('POST', '', data=temp_course_data, expected_status=201, description="Create course for duplicate test")
+            iteration_results['tests'].append(result)
+            
+            # Now try to create a duplicate
+            result, response = self.test_endpoint('POST', '', data=temp_course_data, expected_status=409, description="Test duplicate name handling")
+            iteration_results['tests'].append(result)
+            
+            # Clean up the test course
+            if response and len(iteration_results['tests']) >= 2:
+                prev_response = None
+                for test in iteration_results['tests']:
+                    if test['description'] == "Create course for duplicate test" and test['success']:
+                        # Extract ID from previous successful creation
+                        try:
+                            # We need to get the ID from the actual response, but we don't store it
+                            # Let's just try to find and delete by name
+                            cleanup_result, cleanup_response = self.test_endpoint('GET', '', expected_status=200, description="Get courses for cleanup")
+                            if cleanup_response and cleanup_response.status_code == 200:
+                                courses = cleanup_response.json()
+                                for course in courses:
+                                    if course['name'] == "Duplicate Test Course":
+                                        self.test_endpoint('DELETE', f"/{course['_id']}", expected_status=200, description="Cleanup duplicate test course")
+                                        break
+                        except:
+                            self.log("Failed to cleanup duplicate test course", "WARNING")
         
         # Calculate summary
         iteration_results['summary']['total'] = len(iteration_results['tests'])
@@ -225,7 +257,8 @@ class BatchTester:
         self.start_time = datetime.datetime.now()
         
         # Header
-        self.log_separator("BATCH API TESTER STARTED")
+        self.log_separator("FLASK API BATCH TESTER STARTED")
+        self.log(f"Tester Version: {VERSION}")
         self.log(f"Start time: {self.start_time}")
         self.log(f"Number of iterations: {NUM_ITERATIONS}")
         self.log(f"Target URL: {BASE_URL}")
@@ -285,13 +318,30 @@ class BatchTester:
         self.log_separator("CONSISTENCY ANALYSIS")
         
         if len(all_iterations) > 1:
-            # Check if all iterations had the same number of passed tests
             pass_counts = [it['summary']['passed'] for it in all_iterations]
             if len(set(pass_counts)) == 1:
                 self.log("✅ All iterations had consistent results")
             else:
                 self.log("❌ Inconsistent results detected!")
                 self.log(f"Pass counts per iteration: {pass_counts}")
+                
+                # Analyze which tests are failing inconsistently
+                test_descriptions = set()
+                for iteration in all_iterations:
+                    for test in iteration['tests']:
+                        test_descriptions.add(test['description'])
+                
+                for desc in test_descriptions:
+                    results = []
+                    for iteration in all_iterations:
+                        for test in iteration['tests']:
+                            if test['description'] == desc:
+                                results.append(test['success'])
+                                break
+                    
+                    if len(set(results)) > 1:
+                        self.log(f"❌ Inconsistent test: {desc}")
+                        self.log(f"   Results: {results}")
         
         # Save detailed results to file
         self.save_results_to_file(all_iterations)
@@ -300,12 +350,10 @@ class BatchTester:
         """Save detailed results to file"""
         try:
             with open(self.output_file, 'w') as f:
-                # Write header
                 f.write("="*80 + "\n")
                 f.write("FLASK API BATCH TEST RESULTS\n")
                 f.write("="*80 + "\n\n")
                 
-                # Write summary
                 f.write("SUMMARY:\n")
                 f.write("-"*40 + "\n")
                 for line in self.results:
@@ -315,7 +363,6 @@ class BatchTester:
                 f.write("DETAILED ITERATION DATA (JSON):\n")
                 f.write("="*80 + "\n\n")
                 
-                # Write detailed JSON data
                 f.write(json.dumps(all_iterations, indent=2))
                 
             self.log(f"✅ Detailed results saved to: {self.output_file}")
@@ -324,8 +371,8 @@ class BatchTester:
             self.log(f"❌ Failed to save results to file: {e}", "ERROR")
 
 def main():
-    print("🔄 Batch API Tester")
-    print("This will run multiple test iterations and save results to a file")
+    print(f"🔄 Flask API Tester v{VERSION} - Updated Version")
+    print("This tester matches your current Flask API implementation")
     print(f"Running {NUM_ITERATIONS} iterations with {DELAY_BETWEEN_ITERATIONS}s delays...")
     print()
     
@@ -337,12 +384,11 @@ def main():
         sys.exit(1)
     
     # Run tests
-    tester = BatchTester()
+    tester = APITester()
     tester.run_batch_tests()
     
-    print(f"\n🏁 Batch testing complete!")
+    print(f"\n🏁 Testing complete! (Tester v{VERSION})")
     print(f"📄 Results saved to: {tester.output_file}")
-    print("Upload this file to analyze the inconsistencies.")
 
 if __name__ == "__main__":
     main()

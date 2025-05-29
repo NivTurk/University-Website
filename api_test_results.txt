@@ -4,182 +4,195 @@ FLASK API BATCH TEST RESULTS
 
 SUMMARY:
 ----------------------------------------
-[22:29:30.933] INFO: === BATCH API TESTER STARTED ===================================================
-[22:29:30.933] INFO: Start time: 2025-05-29 22:29:30.933357
-[22:29:30.933] INFO: Number of iterations: 10
-[22:29:30.933] INFO: Target URL: http://localhost:5000/api/courses
-[22:29:30.933] INFO: Delay between iterations: 2 seconds
-[22:29:30.933] INFO: === INITIAL CONNECTION TEST ====================================================
-[22:29:30.938] INFO: ✅ Server connection successful: 200
-[22:29:30.938] INFO: === ITERATION 1 ================================================================
-[22:29:30.941] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:30.941] INFO: Initial courses count: 0
-[22:29:30.948] INFO: ✅ Create course: 201 (6ms)
-[22:29:30.948] INFO: Created course ID: 75368
-[22:29:30.950] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:30.951] INFO: Courses count after creation: 1
-[22:29:30.953] INFO: ✅ Get single course: 200 (2ms)
-[22:29:30.958] INFO: ✅ Update course: 200 (5ms)
-[22:29:30.962] INFO: ✅ Delete course: 200 (3ms)
-[22:29:30.965] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:30.965] INFO: Final courses count: 0
-[22:29:30.967] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:30.970] INFO: ✅ Test validation: 400 (3ms)
-[22:29:30.971] INFO: Iteration 1 Summary: 9/9 passed, 0 failed
-[22:29:30.971] INFO: Waiting 2 seconds before next iteration...
-[22:29:32.972] INFO: === ITERATION 2 ================================================================
-[22:29:32.976] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:32.976] INFO: Initial courses count: 0
-[22:29:32.983] INFO: ✅ Create course: 201 (7ms)
-[22:29:32.983] INFO: Created course ID: 11937
-[22:29:32.986] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:32.986] INFO: Courses count after creation: 1
-[22:29:32.988] INFO: ✅ Get single course: 200 (2ms)
-[22:29:32.992] INFO: ✅ Update course: 200 (3ms)
-[22:29:32.995] INFO: ✅ Delete course: 200 (3ms)
-[22:29:32.998] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:32.998] INFO: Final courses count: 0
-[22:29:33.000] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:33.003] INFO: ✅ Test validation: 400 (3ms)
-[22:29:33.003] INFO: Iteration 2 Summary: 9/9 passed, 0 failed
-[22:29:33.003] INFO: Waiting 2 seconds before next iteration...
-[22:29:35.004] INFO: === ITERATION 3 ================================================================
-[22:29:35.009] INFO: ✅ Get all courses (initial): 200 (4ms)
-[22:29:35.009] INFO: Initial courses count: 0
-[22:29:35.016] INFO: ✅ Create course: 201 (7ms)
-[22:29:35.016] INFO: Created course ID: 28134
-[22:29:35.019] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:35.019] INFO: Courses count after creation: 1
-[22:29:35.021] INFO: ✅ Get single course: 200 (2ms)
-[22:29:35.027] INFO: ✅ Update course: 200 (5ms)
-[22:29:35.031] INFO: ✅ Delete course: 200 (3ms)
-[22:29:35.034] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:35.034] INFO: Final courses count: 0
-[22:29:35.036] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:35.039] INFO: ✅ Test validation: 400 (3ms)
-[22:29:35.039] INFO: Iteration 3 Summary: 9/9 passed, 0 failed
-[22:29:35.039] INFO: Waiting 2 seconds before next iteration...
-[22:29:37.039] INFO: === ITERATION 4 ================================================================
-[22:29:37.043] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:37.043] INFO: Initial courses count: 0
-[22:29:37.049] INFO: ✅ Create course: 201 (6ms)
-[22:29:37.049] INFO: Created course ID: 47375
-[22:29:37.051] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:37.052] INFO: Courses count after creation: 1
-[22:29:37.054] INFO: ✅ Get single course: 200 (2ms)
-[22:29:37.059] INFO: ✅ Update course: 200 (5ms)
-[22:29:37.062] INFO: ✅ Delete course: 200 (2ms)
-[22:29:37.064] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:37.064] INFO: Final courses count: 0
-[22:29:37.066] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:37.069] INFO: ✅ Test validation: 400 (2ms)
-[22:29:37.069] INFO: Iteration 4 Summary: 9/9 passed, 0 failed
-[22:29:37.069] INFO: Waiting 2 seconds before next iteration...
-[22:29:39.069] INFO: === ITERATION 5 ================================================================
-[22:29:39.073] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:39.073] INFO: Initial courses count: 0
-[22:29:39.080] INFO: ✅ Create course: 201 (7ms)
-[22:29:39.081] INFO: Created course ID: 61069
-[22:29:39.085] INFO: ✅ Get all courses (after create): 200 (4ms)
-[22:29:39.086] INFO: Courses count after creation: 1
-[22:29:39.089] INFO: ✅ Get single course: 200 (2ms)
-[22:29:39.093] INFO: ✅ Update course: 200 (4ms)
-[22:29:39.097] INFO: ✅ Delete course: 200 (3ms)
-[22:29:39.100] INFO: ✅ Get all courses (after delete): 200 (3ms)
-[22:29:39.100] INFO: Final courses count: 0
-[22:29:39.103] INFO: ✅ Test invalid ID handling: 400 (2ms)
-[22:29:39.107] INFO: ✅ Test validation: 400 (3ms)
-[22:29:39.107] INFO: Iteration 5 Summary: 9/9 passed, 0 failed
-[22:29:39.107] INFO: Waiting 2 seconds before next iteration...
-[22:29:41.107] INFO: === ITERATION 6 ================================================================
-[22:29:41.110] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:41.110] INFO: Initial courses count: 0
-[22:29:41.117] INFO: ✅ Create course: 201 (6ms)
-[22:29:41.117] INFO: Created course ID: 24345
-[22:29:41.119] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:41.119] INFO: Courses count after creation: 1
-[22:29:41.122] INFO: ✅ Get single course: 200 (3ms)
-[22:29:41.128] INFO: ✅ Update course: 200 (5ms)
-[22:29:41.130] INFO: ✅ Delete course: 200 (2ms)
-[22:29:41.133] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:41.133] INFO: Final courses count: 0
-[22:29:41.134] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:41.144] INFO: ✅ Test validation: 400 (9ms)
-[22:29:41.144] INFO: Iteration 6 Summary: 9/9 passed, 0 failed
-[22:29:41.144] INFO: Waiting 2 seconds before next iteration...
-[22:29:43.144] INFO: === ITERATION 7 ================================================================
-[22:29:43.148] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:43.148] INFO: Initial courses count: 0
-[22:29:43.156] INFO: ✅ Create course: 201 (8ms)
-[22:29:43.157] INFO: Created course ID: 36671
-[22:29:43.159] INFO: ✅ Get all courses (after create): 200 (2ms)
-[22:29:43.159] INFO: Courses count after creation: 1
-[22:29:43.163] INFO: ✅ Get single course: 200 (3ms)
-[22:29:43.168] INFO: ✅ Update course: 200 (5ms)
-[22:29:43.172] INFO: ✅ Delete course: 200 (3ms)
-[22:29:43.174] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:43.174] INFO: Final courses count: 0
-[22:29:43.176] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:43.180] INFO: ✅ Test validation: 400 (4ms)
-[22:29:43.180] INFO: Iteration 7 Summary: 9/9 passed, 0 failed
-[22:29:43.181] INFO: Waiting 2 seconds before next iteration...
-[22:29:45.183] INFO: === ITERATION 8 ================================================================
-[22:29:45.187] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:45.187] INFO: Initial courses count: 0
-[22:29:45.195] INFO: ✅ Create course: 201 (7ms)
-[22:29:45.195] INFO: Created course ID: 90446
-[22:29:45.198] INFO: ✅ Get all courses (after create): 200 (3ms)
-[22:29:45.199] INFO: Courses count after creation: 1
-[22:29:45.203] INFO: ✅ Get single course: 200 (4ms)
-[22:29:45.207] INFO: ✅ Update course: 200 (4ms)
-[22:29:45.210] INFO: ✅ Delete course: 200 (3ms)
-[22:29:45.212] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:45.213] INFO: Final courses count: 0
-[22:29:45.214] INFO: ✅ Test invalid ID handling: 400 (1ms)
-[22:29:45.219] INFO: ✅ Test validation: 400 (4ms)
-[22:29:45.219] INFO: Iteration 8 Summary: 9/9 passed, 0 failed
-[22:29:45.219] INFO: Waiting 2 seconds before next iteration...
-[22:29:47.220] INFO: === ITERATION 9 ================================================================
-[22:29:47.223] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:47.224] INFO: Initial courses count: 0
-[22:29:47.234] INFO: ✅ Create course: 201 (10ms)
-[22:29:47.234] INFO: Created course ID: 30294
-[22:29:47.237] INFO: ✅ Get all courses (after create): 200 (3ms)
-[22:29:47.238] INFO: Courses count after creation: 1
-[22:29:47.241] INFO: ✅ Get single course: 200 (3ms)
-[22:29:47.247] INFO: ✅ Update course: 200 (5ms)
-[22:29:47.250] INFO: ✅ Delete course: 200 (3ms)
-[22:29:47.254] INFO: ✅ Get all courses (after delete): 200 (3ms)
-[22:29:47.254] INFO: Final courses count: 0
-[22:29:47.256] INFO: ✅ Test invalid ID handling: 400 (2ms)
-[22:29:47.259] INFO: ✅ Test validation: 400 (3ms)
-[22:29:47.260] INFO: Iteration 9 Summary: 9/9 passed, 0 failed
-[22:29:47.260] INFO: Waiting 2 seconds before next iteration...
-[22:29:49.262] INFO: === ITERATION 10 ===============================================================
-[22:29:49.266] INFO: ✅ Get all courses (initial): 200 (3ms)
-[22:29:49.266] INFO: Initial courses count: 0
-[22:29:49.274] INFO: ✅ Create course: 201 (8ms)
-[22:29:49.274] INFO: Created course ID: 49644
-[22:29:49.278] INFO: ✅ Get all courses (after create): 200 (3ms)
-[22:29:49.278] INFO: Courses count after creation: 1
-[22:29:49.283] INFO: ✅ Get single course: 200 (4ms)
-[22:29:49.289] INFO: ✅ Update course: 200 (6ms)
-[22:29:49.294] INFO: ✅ Delete course: 200 (4ms)
-[22:29:49.297] INFO: ✅ Get all courses (after delete): 200 (2ms)
-[22:29:49.297] INFO: Final courses count: 0
-[22:29:49.299] INFO: ✅ Test invalid ID handling: 400 (2ms)
-[22:29:49.303] INFO: ✅ Test validation: 400 (4ms)
-[22:29:49.303] INFO: Iteration 10 Summary: 9/9 passed, 0 failed
-[22:29:49.304] INFO: === BATCH TEST SUMMARY =========================================================
-[22:29:49.304] INFO: End time: 2025-05-29 22:29:49.304074
-[22:29:49.304] INFO: Total duration: 0:00:18.370717
-[22:29:49.304] INFO: Completed iterations: 10
-[22:29:49.304] INFO: Total tests run: 90
-[22:29:49.304] INFO: Total passed: 90
-[22:29:49.304] INFO: Total failed: 0
-[22:29:49.304] INFO: Overall success rate: 100.0%
-[22:29:49.304] INFO: === CONSISTENCY ANALYSIS =======================================================
-[22:29:49.304] INFO: ✅ All iterations had consistent results
+[22:56:08.267] INFO: === FLASK API BATCH TESTER STARTED =============================================
+[22:56:08.267] INFO: Tester Version: 2.0.0
+[22:56:08.267] INFO: Start time: 2025-05-29 22:56:08.267733
+[22:56:08.267] INFO: Number of iterations: 10
+[22:56:08.267] INFO: Target URL: http://localhost:5000/api/courses
+[22:56:08.267] INFO: Delay between iterations: 2 seconds
+[22:56:08.267] INFO: === INITIAL CONNECTION TEST ====================================================
+[22:56:08.273] INFO: ✅ Server connection successful: 200
+[22:56:08.274] INFO: === ITERATION 1 ================================================================
+[22:56:08.278] INFO: ✅ Get all courses (initial): 200 (4ms)
+[22:56:08.278] INFO: Initial courses count: 0
+[22:56:08.286] INFO: ✅ Create course: 201 (7ms)
+[22:56:08.286] INFO: Created course ID: 79508
+[22:56:08.290] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:08.290] INFO: Courses count after creation: 1
+[22:56:08.292] INFO: ✅ Get single course: 200 (2ms)
+[22:56:08.297] INFO: ✅ Update course: 200 (4ms)
+[22:56:08.300] INFO: ✅ Delete course: 200 (2ms)
+[22:56:08.302] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[22:56:08.302] INFO: Final courses count: 0
+[22:56:08.305] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:08.309] INFO: ✅ Test validation errors: 400 (4ms)
+[22:56:08.315] INFO: ✅ Create course for duplicate test: 201 (5ms)
+[22:56:08.321] INFO: ✅ Test duplicate name handling: 409 (5ms)
+[22:56:08.321] INFO: Iteration 1 Summary: 11/11 passed, 0 failed
+[22:56:08.321] INFO: Waiting 2 seconds before next iteration...
+[22:56:10.322] INFO: === ITERATION 2 ================================================================
+[22:56:10.327] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:10.327] INFO: Initial courses count: 1
+[22:56:10.333] INFO: ✅ Create course: 201 (6ms)
+[22:56:10.333] INFO: Created course ID: 20643
+[22:56:10.336] INFO: ✅ Get all courses (after create): 200 (2ms)
+[22:56:10.336] INFO: Courses count after creation: 2
+[22:56:10.339] INFO: ✅ Get single course: 200 (3ms)
+[22:56:10.344] INFO: ✅ Update course: 200 (5ms)
+[22:56:10.349] INFO: ✅ Delete course: 200 (4ms)
+[22:56:10.352] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[22:56:10.353] INFO: Final courses count: 1
+[22:56:10.355] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:10.362] INFO: ✅ Test validation errors: 400 (6ms)
+[22:56:10.368] INFO: ✅ Test duplicate name handling: 409 (6ms)
+[22:56:10.369] INFO: Iteration 2 Summary: 10/10 passed, 0 failed
+[22:56:10.369] INFO: Waiting 2 seconds before next iteration...
+[22:56:12.369] INFO: === ITERATION 3 ================================================================
+[22:56:12.373] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:12.373] INFO: Initial courses count: 1
+[22:56:12.381] INFO: ✅ Create course: 201 (8ms)
+[22:56:12.382] INFO: Created course ID: 13873
+[22:56:12.385] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:12.385] INFO: Courses count after creation: 2
+[22:56:12.390] INFO: ✅ Get single course: 200 (4ms)
+[22:56:12.397] INFO: ✅ Update course: 200 (7ms)
+[22:56:12.401] INFO: ✅ Delete course: 200 (3ms)
+[22:56:12.405] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[22:56:12.405] INFO: Final courses count: 1
+[22:56:12.408] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:12.412] INFO: ✅ Test validation errors: 400 (4ms)
+[22:56:12.418] INFO: ✅ Test duplicate name handling: 409 (5ms)
+[22:56:12.418] INFO: Iteration 3 Summary: 10/10 passed, 0 failed
+[22:56:12.418] INFO: Waiting 2 seconds before next iteration...
+[22:56:14.419] INFO: === ITERATION 4 ================================================================
+[22:56:14.423] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:14.423] INFO: Initial courses count: 1
+[22:56:14.432] INFO: ✅ Create course: 201 (8ms)
+[22:56:14.432] INFO: Created course ID: 89878
+[22:56:14.435] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:14.435] INFO: Courses count after creation: 2
+[22:56:14.438] INFO: ✅ Get single course: 200 (3ms)
+[22:56:14.445] INFO: ✅ Update course: 200 (6ms)
+[22:56:14.449] INFO: ✅ Delete course: 200 (3ms)
+[22:56:14.452] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[22:56:14.452] INFO: Final courses count: 1
+[22:56:14.454] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:14.458] INFO: ✅ Test validation errors: 400 (4ms)
+[22:56:14.462] INFO: ✅ Test duplicate name handling: 409 (4ms)
+[22:56:14.463] INFO: Iteration 4 Summary: 10/10 passed, 0 failed
+[22:56:14.463] INFO: Waiting 2 seconds before next iteration...
+[22:56:16.463] INFO: === ITERATION 5 ================================================================
+[22:56:16.468] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:16.468] INFO: Initial courses count: 1
+[22:56:16.476] INFO: ✅ Create course: 201 (8ms)
+[22:56:16.476] INFO: Created course ID: 74783
+[22:56:16.479] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:16.479] INFO: Courses count after creation: 2
+[22:56:16.482] INFO: ✅ Get single course: 200 (2ms)
+[22:56:16.486] INFO: ✅ Update course: 200 (3ms)
+[22:56:16.488] INFO: ✅ Delete course: 200 (2ms)
+[22:56:16.492] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[22:56:16.492] INFO: Final courses count: 1
+[22:56:16.494] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[22:56:16.497] INFO: ✅ Test validation errors: 400 (3ms)
+[22:56:16.502] INFO: ✅ Test duplicate name handling: 409 (4ms)
+[22:56:16.502] INFO: Iteration 5 Summary: 10/10 passed, 0 failed
+[22:56:16.502] INFO: Waiting 2 seconds before next iteration...
+[22:56:18.503] INFO: === ITERATION 6 ================================================================
+[22:56:18.508] INFO: ✅ Get all courses (initial): 200 (4ms)
+[22:56:18.508] INFO: Initial courses count: 1
+[22:56:18.515] INFO: ✅ Create course: 201 (7ms)
+[22:56:18.515] INFO: Created course ID: 99477
+[22:56:18.519] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:18.519] INFO: Courses count after creation: 2
+[22:56:18.522] INFO: ✅ Get single course: 200 (3ms)
+[22:56:18.529] INFO: ✅ Update course: 200 (6ms)
+[22:56:18.533] INFO: ✅ Delete course: 200 (4ms)
+[22:56:18.536] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[22:56:18.536] INFO: Final courses count: 1
+[22:56:18.538] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[22:56:18.542] INFO: ✅ Test validation errors: 400 (3ms)
+[22:56:18.548] INFO: ✅ Test duplicate name handling: 409 (5ms)
+[22:56:18.548] INFO: Iteration 6 Summary: 10/10 passed, 0 failed
+[22:56:18.548] INFO: Waiting 2 seconds before next iteration...
+[22:56:20.549] INFO: === ITERATION 7 ================================================================
+[22:56:20.554] INFO: ✅ Get all courses (initial): 200 (4ms)
+[22:56:20.554] INFO: Initial courses count: 1
+[22:56:20.561] INFO: ✅ Create course: 201 (7ms)
+[22:56:20.561] INFO: Created course ID: 82336
+[22:56:20.565] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:20.565] INFO: Courses count after creation: 2
+[22:56:20.568] INFO: ✅ Get single course: 200 (2ms)
+[22:56:20.573] INFO: ✅ Update course: 200 (4ms)
+[22:56:20.576] INFO: ✅ Delete course: 200 (3ms)
+[22:56:20.580] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[22:56:20.580] INFO: Final courses count: 1
+[22:56:20.582] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:20.586] INFO: ✅ Test validation errors: 400 (3ms)
+[22:56:20.590] INFO: ✅ Test duplicate name handling: 409 (4ms)
+[22:56:20.590] INFO: Iteration 7 Summary: 10/10 passed, 0 failed
+[22:56:20.590] INFO: Waiting 2 seconds before next iteration...
+[22:56:22.591] INFO: === ITERATION 8 ================================================================
+[22:56:22.594] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:22.595] INFO: Initial courses count: 1
+[22:56:22.603] INFO: ✅ Create course: 201 (8ms)
+[22:56:22.603] INFO: Created course ID: 88054
+[22:56:22.606] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:22.606] INFO: Courses count after creation: 2
+[22:56:22.609] INFO: ✅ Get single course: 200 (3ms)
+[22:56:22.616] INFO: ✅ Update course: 200 (6ms)
+[22:56:22.620] INFO: ✅ Delete course: 200 (3ms)
+[22:56:22.623] INFO: ✅ Get all courses (after delete): 200 (3ms)
+[22:56:22.623] INFO: Final courses count: 1
+[22:56:22.626] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:22.631] INFO: ✅ Test validation errors: 400 (5ms)
+[22:56:22.637] INFO: ✅ Test duplicate name handling: 409 (5ms)
+[22:56:22.637] INFO: Iteration 8 Summary: 10/10 passed, 0 failed
+[22:56:22.637] INFO: Waiting 2 seconds before next iteration...
+[22:56:24.637] INFO: === ITERATION 9 ================================================================
+[22:56:24.642] INFO: ✅ Get all courses (initial): 200 (4ms)
+[22:56:24.642] INFO: Initial courses count: 1
+[22:56:24.650] INFO: ✅ Create course: 201 (7ms)
+[22:56:24.650] INFO: Created course ID: 25876
+[22:56:24.653] INFO: ✅ Get all courses (after create): 200 (3ms)
+[22:56:24.653] INFO: Courses count after creation: 2
+[22:56:24.656] INFO: ✅ Get single course: 200 (3ms)
+[22:56:24.661] INFO: ✅ Update course: 200 (4ms)
+[22:56:24.665] INFO: ✅ Delete course: 200 (3ms)
+[22:56:24.668] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[22:56:24.668] INFO: Final courses count: 1
+[22:56:24.670] INFO: ✅ Test invalid ID handling: 400 (1ms)
+[22:56:24.673] INFO: ✅ Test validation errors: 400 (3ms)
+[22:56:24.677] INFO: ✅ Test duplicate name handling: 409 (3ms)
+[22:56:24.677] INFO: Iteration 9 Summary: 10/10 passed, 0 failed
+[22:56:24.677] INFO: Waiting 2 seconds before next iteration...
+[22:56:26.678] INFO: === ITERATION 10 ===============================================================
+[22:56:26.682] INFO: ✅ Get all courses (initial): 200 (3ms)
+[22:56:26.682] INFO: Initial courses count: 1
+[22:56:26.693] INFO: ✅ Create course: 201 (10ms)
+[22:56:26.693] INFO: Created course ID: 51025
+[22:56:26.698] INFO: ✅ Get all courses (after create): 200 (4ms)
+[22:56:26.698] INFO: Courses count after creation: 2
+[22:56:26.702] INFO: ✅ Get single course: 200 (4ms)
+[22:56:26.706] INFO: ✅ Update course: 200 (4ms)
+[22:56:26.709] INFO: ✅ Delete course: 200 (2ms)
+[22:56:26.712] INFO: ✅ Get all courses (after delete): 200 (2ms)
+[22:56:26.712] INFO: Final courses count: 1
+[22:56:26.714] INFO: ✅ Test invalid ID handling: 400 (2ms)
+[22:56:26.718] INFO: ✅ Test validation errors: 400 (4ms)
+[22:56:26.723] INFO: ✅ Test duplicate name handling: 409 (4ms)
+[22:56:26.723] INFO: Iteration 10 Summary: 10/10 passed, 0 failed
+[22:56:26.723] INFO: === BATCH TEST SUMMARY =========================================================
+[22:56:26.723] INFO: End time: 2025-05-29 22:56:26.723773
+[22:56:26.723] INFO: Total duration: 0:00:18.456040
+[22:56:26.723] INFO: Completed iterations: 10
+[22:56:26.723] INFO: Total tests run: 101
+[22:56:26.723] INFO: Total passed: 101
+[22:56:26.723] INFO: Total failed: 0
+[22:56:26.723] INFO: Overall success rate: 100.0%
+[22:56:26.723] INFO: === CONSISTENCY ANALYSIS =======================================================
+[22:56:26.723] INFO: ❌ Inconsistent results detected!
+[22:56:26.723] INFO: Pass counts per iteration: [11, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 
 
 ================================================================================
@@ -189,16 +202,16 @@ DETAILED ITERATION DATA (JSON):
 [
   {
     "iteration": 1,
-    "start_time": "2025-05-29T22:29:30.938086",
+    "start_time": "2025-05-29T22:56:08.274003",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:30.938109",
+        "timestamp": "2025-05-29T22:56:08.274028",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
+        "response_time_ms": 4,
         "response_text": "[]",
         "error": null
       },
@@ -206,62 +219,62 @@ DETAILED ITERATION DATA (JSON):
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:30.941507",
+        "timestamp": "2025-05-29T22:56:08.278883",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 6,
-        "response_text": "{\"_id\": \"75368\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-29 22:29:30.941501\"}",
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"79508\", \"name\": \"Test Course 1\", \"syllabus\": \"Test syllabus for iteration 1 created at 2025-05-29 22:56:08.278875\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:30.948431",
+        "timestamp": "2025-05-29T22:56:08.286685",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"75368\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-29 22:29:30.941501\"}]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"79508\", \"name\": \"Test Course 1\", \"syllabus\": \"Test syllabus for iteration 1 created at 2025-05-29 22:56:08.278875\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/75368",
+        "url": "http://localhost:5000/api/courses/79508",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:30.951056",
+        "timestamp": "2025-05-29T22:56:08.290291",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
-        "response_text": "{\"_id\": \"75368\", \"name\": \"Test Course 1\", \"syllabus\": \"Syllabus for iteration 1 created at 2025-05-29 22:29:30.941501\"}",
+        "response_text": "{\"_id\": \"79508\", \"name\": \"Test Course 1\", \"syllabus\": \"Test syllabus for iteration 1 created at 2025-05-29 22:56:08.278875\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/75368",
+        "url": "http://localhost:5000/api/courses/79508",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:30.953593",
+        "timestamp": "2025-05-29T22:56:08.292959",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"75368\", \"name\": \"Updated Course 1 -v953\", \"syllabus\": \"Updated syllabus for iteration 1 -version 953\"}",
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"79508\", \"name\": \"Updated Course 1\", \"syllabus\": \"Updated syllabus for iteration 1\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/75368",
+        "url": "http://localhost:5000/api/courses/79508",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:30.959038",
+        "timestamp": "2025-05-29T22:56:08.297528",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 1 -v953 has been deleted\", \"deleted\": {\"_id\": \"75368\", \"name\": \"Updated Course 1 -v953\", \"syllabus\": \"Updated syllabus for iteration 1 -version 953\"}}",
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Updated Course 1 has been deleted\", \"deleted\": {\"_id\": \"79508\", \"name\": \"Updated Course 1\", \"syllabus\": \"Updated syllabus for iteration 1\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:30.962884",
+        "timestamp": "2025-05-29T22:56:08.300128",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
@@ -272,791 +285,633 @@ DETAILED ITERATION DATA (JSON):
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:30.965739",
+        "timestamp": "2025-05-29T22:56:08.303026",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 1,
+        "response_time_ms": 2,
         "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:30.967489",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:08.305361",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 3,
+        "response_time_ms": 4,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course for duplicate test",
+        "timestamp": "2025-05-29T22:56:08.309979",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 5,
+        "response_text": "{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:08.315569",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 5,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
         "error": null
       }
     ],
-    "created_course_id": "75368",
+    "created_course_id": "79508",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 11,
+      "passed": 11,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:30.971006"
+    "end_time": "2025-05-29T22:56:08.321449"
   },
   {
     "iteration": 2,
-    "start_time": "2025-05-29T22:29:32.972333",
+    "start_time": "2025-05-29T22:56:10.322914",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:32.972416",
+        "timestamp": "2025-05-29T22:56:10.323105",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:32.976183",
+        "timestamp": "2025-05-29T22:56:10.327170",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 7,
-        "response_text": "{\"_id\": \"11937\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-29 22:29:32.976175\"}",
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"20643\", \"name\": \"Test Course 2\", \"syllabus\": \"Test syllabus for iteration 2 created at 2025-05-29 22:56:10.327163\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:32.983447",
+        "timestamp": "2025-05-29T22:56:10.333471",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"11937\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-29 22:29:32.976175\"}]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"20643\", \"name\": \"Test Course 2\", \"syllabus\": \"Test syllabus for iteration 2 created at 2025-05-29 22:56:10.327163\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/11937",
+        "url": "http://localhost:5000/api/courses/20643",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:32.986245",
+        "timestamp": "2025-05-29T22:56:10.336302",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "{\"_id\": \"11937\", \"name\": \"Test Course 2\", \"syllabus\": \"Syllabus for iteration 2 created at 2025-05-29 22:29:32.976175\"}",
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"20643\", \"name\": \"Test Course 2\", \"syllabus\": \"Test syllabus for iteration 2 created at 2025-05-29 22:56:10.327163\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/11937",
+        "url": "http://localhost:5000/api/courses/20643",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:32.988650",
+        "timestamp": "2025-05-29T22:56:10.339559",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"_id\": \"11937\", \"name\": \"Updated Course 2 -v2988\", \"syllabus\": \"Updated syllabus for iteration 2 -version 2988\"}",
+        "response_time_ms": 5,
+        "response_text": "{\"_id\": \"20643\", \"name\": \"Updated Course 2\", \"syllabus\": \"Updated syllabus for iteration 2\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/11937",
+        "url": "http://localhost:5000/api/courses/20643",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:32.992110",
+        "timestamp": "2025-05-29T22:56:10.344979",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 2 -v2988 has been deleted\", \"deleted\": {\"_id\": \"11937\", \"name\": \"Updated Course 2 -v2988\", \"syllabus\": \"Updated syllabus for iteration 2 -version 2988\"}}",
+        "response_time_ms": 4,
+        "response_text": "{\"message\": \"Updated Course 2 has been deleted\", \"deleted\": {\"_id\": \"20643\", \"name\": \"Updated Course 2\", \"syllabus\": \"Updated syllabus for iteration 2\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:32.995821",
+        "timestamp": "2025-05-29T22:56:10.349334",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:32.998521",
+        "timestamp": "2025-05-29T22:56:10.353097",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 1,
+        "response_time_ms": 2,
         "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:33.000302",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:10.355969",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 3,
+        "response_time_ms": 6,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:10.362637",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 6,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
         "error": null
       }
     ],
-    "created_course_id": "11937",
+    "created_course_id": "20643",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:33.003799"
+    "end_time": "2025-05-29T22:56:10.369138"
   },
   {
     "iteration": 3,
-    "start_time": "2025-05-29T22:29:35.004093",
+    "start_time": "2025-05-29T22:56:12.369813",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:35.004169",
+        "timestamp": "2025-05-29T22:56:12.369957",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "[]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:35.009144",
+        "timestamp": "2025-05-29T22:56:12.373684",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 7,
-        "response_text": "{\"_id\": \"28134\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-29 22:29:35.009136\"}",
+        "response_time_ms": 8,
+        "response_text": "{\"_id\": \"13873\", \"name\": \"Test Course 3\", \"syllabus\": \"Test syllabus for iteration 3 created at 2025-05-29 22:56:12.373678\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:35.016902",
+        "timestamp": "2025-05-29T22:56:12.382113",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"28134\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-29 22:29:35.009136\"}]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"13873\", \"name\": \"Test Course 3\", \"syllabus\": \"Test syllabus for iteration 3 created at 2025-05-29 22:56:12.373678\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/28134",
+        "url": "http://localhost:5000/api/courses/13873",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:35.019553",
+        "timestamp": "2025-05-29T22:56:12.385740",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "{\"_id\": \"28134\", \"name\": \"Test Course 3\", \"syllabus\": \"Syllabus for iteration 3 created at 2025-05-29 22:29:35.009136\"}",
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"13873\", \"name\": \"Test Course 3\", \"syllabus\": \"Test syllabus for iteration 3 created at 2025-05-29 22:56:12.373678\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/28134",
+        "url": "http://localhost:5000/api/courses/13873",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:35.022073",
+        "timestamp": "2025-05-29T22:56:12.390705",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"28134\", \"name\": \"Updated Course 3 -v5022\", \"syllabus\": \"Updated syllabus for iteration 3 -version 5022\"}",
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"13873\", \"name\": \"Updated Course 3\", \"syllabus\": \"Updated syllabus for iteration 3\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/28134",
+        "url": "http://localhost:5000/api/courses/13873",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:35.027688",
+        "timestamp": "2025-05-29T22:56:12.397975",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 3 -v5022 has been deleted\", \"deleted\": {\"_id\": \"28134\", \"name\": \"Updated Course 3 -v5022\", \"syllabus\": \"Updated syllabus for iteration 3 -version 5022\"}}",
+        "response_text": "{\"message\": \"Updated Course 3 has been deleted\", \"deleted\": {\"_id\": \"13873\", \"name\": \"Updated Course 3\", \"syllabus\": \"Updated syllabus for iteration 3\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:35.031569",
+        "timestamp": "2025-05-29T22:56:12.401976",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:35.034225",
+        "timestamp": "2025-05-29T22:56:12.405506",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 1,
+        "response_time_ms": 2,
         "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:35.036107",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:12.408595",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 3,
+        "response_time_ms": 4,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:12.412965",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 5,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
         "error": null
       }
     ],
-    "created_course_id": "28134",
+    "created_course_id": "13873",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:35.039313"
+    "end_time": "2025-05-29T22:56:12.418549"
   },
   {
     "iteration": 4,
-    "start_time": "2025-05-29T22:29:37.039535",
+    "start_time": "2025-05-29T22:56:14.419378",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:37.039636",
+        "timestamp": "2025-05-29T22:56:14.419479",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:37.043368",
+        "timestamp": "2025-05-29T22:56:14.423371",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 6,
-        "response_text": "{\"_id\": \"47375\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-29 22:29:37.043335\"}",
+        "response_time_ms": 8,
+        "response_text": "{\"_id\": \"89878\", \"name\": \"Test Course 4\", \"syllabus\": \"Test syllabus for iteration 4 created at 2025-05-29 22:56:14.423362\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:37.049723",
+        "timestamp": "2025-05-29T22:56:14.432163",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"47375\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-29 22:29:37.043335\"}]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"89878\", \"name\": \"Test Course 4\", \"syllabus\": \"Test syllabus for iteration 4 created at 2025-05-29 22:56:14.423362\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/47375",
+        "url": "http://localhost:5000/api/courses/89878",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:37.052072",
+        "timestamp": "2025-05-29T22:56:14.435547",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "{\"_id\": \"47375\", \"name\": \"Test Course 4\", \"syllabus\": \"Syllabus for iteration 4 created at 2025-05-29 22:29:37.043335\"}",
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"89878\", \"name\": \"Test Course 4\", \"syllabus\": \"Test syllabus for iteration 4 created at 2025-05-29 22:56:14.423362\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/47375",
+        "url": "http://localhost:5000/api/courses/89878",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:37.054306",
+        "timestamp": "2025-05-29T22:56:14.439036",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"47375\", \"name\": \"Updated Course 4 -v7054\", \"syllabus\": \"Updated syllabus for iteration 4 -version 7054\"}",
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"89878\", \"name\": \"Updated Course 4\", \"syllabus\": \"Updated syllabus for iteration 4\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/47375",
+        "url": "http://localhost:5000/api/courses/89878",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:37.059731",
+        "timestamp": "2025-05-29T22:56:14.445966",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "{\"message\": \"Updated Course 4 -v7054 has been deleted\", \"deleted\": {\"_id\": \"47375\", \"name\": \"Updated Course 4 -v7054\", \"syllabus\": \"Updated syllabus for iteration 4 -version 7054\"}}",
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Updated Course 4 has been deleted\", \"deleted\": {\"_id\": \"89878\", \"name\": \"Updated Course 4\", \"syllabus\": \"Updated syllabus for iteration 4\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:37.062804",
+        "timestamp": "2025-05-29T22:56:14.449608",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:37.065045",
+        "timestamp": "2025-05-29T22:56:14.452246",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 1,
+        "response_time_ms": 2,
         "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:37.066688",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:14.454583",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 2,
+        "response_time_ms": 4,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:14.458680",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 4,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
         "error": null
       }
     ],
-    "created_course_id": "47375",
+    "created_course_id": "89878",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:37.069507"
+    "end_time": "2025-05-29T22:56:14.463077"
   },
   {
     "iteration": 5,
-    "start_time": "2025-05-29T22:29:39.069937",
+    "start_time": "2025-05-29T22:56:16.463916",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:39.070018",
+        "timestamp": "2025-05-29T22:56:16.464086",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:39.073719",
+        "timestamp": "2025-05-29T22:56:16.468205",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 7,
-        "response_text": "{\"_id\": \"61069\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-29 22:29:39.073705\"}",
+        "response_time_ms": 8,
+        "response_text": "{\"_id\": \"74783\", \"name\": \"Test Course 5\", \"syllabus\": \"Test syllabus for iteration 5 created at 2025-05-29 22:56:16.468198\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:39.081125",
+        "timestamp": "2025-05-29T22:56:16.476576",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "[{\"_id\": \"61069\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-29 22:29:39.073705\"}]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"74783\", \"name\": \"Test Course 5\", \"syllabus\": \"Test syllabus for iteration 5 created at 2025-05-29 22:56:16.468198\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/61069",
+        "url": "http://localhost:5000/api/courses/74783",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:39.086276",
+        "timestamp": "2025-05-29T22:56:16.479702",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
-        "response_text": "{\"_id\": \"61069\", \"name\": \"Test Course 5\", \"syllabus\": \"Syllabus for iteration 5 created at 2025-05-29 22:29:39.073705\"}",
+        "response_text": "{\"_id\": \"74783\", \"name\": \"Test Course 5\", \"syllabus\": \"Test syllabus for iteration 5 created at 2025-05-29 22:56:16.468198\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/61069",
+        "url": "http://localhost:5000/api/courses/74783",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:39.089386",
+        "timestamp": "2025-05-29T22:56:16.482747",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "{\"_id\": \"61069\", \"name\": \"Updated Course 5 -v9089\", \"syllabus\": \"Updated syllabus for iteration 5 -version 9089\"}",
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"74783\", \"name\": \"Updated Course 5\", \"syllabus\": \"Updated syllabus for iteration 5\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/61069",
+        "url": "http://localhost:5000/api/courses/74783",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:39.093867",
+        "timestamp": "2025-05-29T22:56:16.486536",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 5 -v9089 has been deleted\", \"deleted\": {\"_id\": \"61069\", \"name\": \"Updated Course 5 -v9089\", \"syllabus\": \"Updated syllabus for iteration 5 -version 9089\"}}",
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Updated Course 5 has been deleted\", \"deleted\": {\"_id\": \"74783\", \"name\": \"Updated Course 5\", \"syllabus\": \"Updated syllabus for iteration 5\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:39.097296",
+        "timestamp": "2025-05-29T22:56:16.488925",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:39.101034",
+        "timestamp": "2025-05-29T22:56:16.492149",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 2,
+        "response_time_ms": 1,
         "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:39.103461",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:16.494190",
         "success": true,
         "status_code": 400,
         "response_time_ms": 3,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
         "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:16.497574",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 4,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
+        "error": null
       }
     ],
-    "created_course_id": "61069",
+    "created_course_id": "74783",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:39.107220"
+    "end_time": "2025-05-29T22:56:16.502125"
   },
   {
     "iteration": 6,
-    "start_time": "2025-05-29T22:29:41.107654",
+    "start_time": "2025-05-29T22:56:18.503425",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:41.107737",
+        "timestamp": "2025-05-29T22:56:18.503628",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "[]",
-        "error": null
-      },
-      {
-        "method": "POST",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Create course",
-        "timestamp": "2025-05-29T22:29:41.110920",
-        "success": true,
-        "status_code": 201,
-        "response_time_ms": 6,
-        "response_text": "{\"_id\": \"24345\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-29 22:29:41.110913\"}",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:41.117404",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"24345\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-29 22:29:41.110913\"}]",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses/24345",
-        "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:41.119686",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"_id\": \"24345\", \"name\": \"Test Course 6\", \"syllabus\": \"Syllabus for iteration 6 created at 2025-05-29 22:29:41.110913\"}",
-        "error": null
-      },
-      {
-        "method": "PUT",
-        "url": "http://localhost:5000/api/courses/24345",
-        "description": "Update course",
-        "timestamp": "2025-05-29T22:29:41.122875",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"24345\", \"name\": \"Updated Course 6 -v1122\", \"syllabus\": \"Updated syllabus for iteration 6 -version 1122\"}",
-        "error": null
-      },
-      {
-        "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/24345",
-        "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:41.128158",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "{\"message\": \"Updated Course 6 -v1122 has been deleted\", \"deleted\": {\"_id\": \"24345\", \"name\": \"Updated Course 6 -v1122\", \"syllabus\": \"Updated syllabus for iteration 6 -version 1122\"}}",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:41.131063",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[]",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses/invalid_id",
-        "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:41.133429",
-        "success": true,
-        "status_code": 400,
-        "response_time_ms": 1,
-        "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
-        "error": null
-      },
-      {
-        "method": "POST",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:41.135015",
-        "success": true,
-        "status_code": 400,
-        "response_time_ms": 9,
-        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
-        "error": null
-      }
-    ],
-    "created_course_id": "24345",
-    "summary": {
-      "total": 9,
-      "passed": 9,
-      "failed": 0
-    },
-    "end_time": "2025-05-29T22:29:41.144674"
-  },
-  {
-    "iteration": 7,
-    "start_time": "2025-05-29T22:29:43.144881",
-    "tests": [
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:43.144976",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "[]",
-        "error": null
-      },
-      {
-        "method": "POST",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Create course",
-        "timestamp": "2025-05-29T22:29:43.148511",
-        "success": true,
-        "status_code": 201,
-        "response_time_ms": 8,
-        "response_text": "{\"_id\": \"36671\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-29 22:29:43.148501\"}",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:43.157155",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[{\"_id\": \"36671\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-29 22:29:43.148501\"}]",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses/36671",
-        "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:43.160019",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"_id\": \"36671\", \"name\": \"Test Course 7\", \"syllabus\": \"Syllabus for iteration 7 created at 2025-05-29 22:29:43.148501\"}",
-        "error": null
-      },
-      {
-        "method": "PUT",
-        "url": "http://localhost:5000/api/courses/36671",
-        "description": "Update course",
-        "timestamp": "2025-05-29T22:29:43.163792",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"36671\", \"name\": \"Updated Course 7 -v3163\", \"syllabus\": \"Updated syllabus for iteration 7 -version 3163\"}",
-        "error": null
-      },
-      {
-        "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/36671",
-        "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:43.168947",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 7 -v3163 has been deleted\", \"deleted\": {\"_id\": \"36671\", \"name\": \"Updated Course 7 -v3163\", \"syllabus\": \"Updated syllabus for iteration 7 -version 3163\"}}",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:43.172113",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[]",
-        "error": null
-      },
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses/invalid_id",
-        "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:43.174702",
-        "success": true,
-        "status_code": 400,
-        "response_time_ms": 1,
-        "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
-        "error": null
-      },
-      {
-        "method": "POST",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:43.176496",
-        "success": true,
-        "status_code": 400,
         "response_time_ms": 4,
-        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
-        "error": null
-      }
-    ],
-    "created_course_id": "36671",
-    "summary": {
-      "total": 9,
-      "passed": 9,
-      "failed": 0
-    },
-    "end_time": "2025-05-29T22:29:43.180975"
-  },
-  {
-    "iteration": 8,
-    "start_time": "2025-05-29T22:29:45.183882",
-    "tests": [
-      {
-        "method": "GET",
-        "url": "http://localhost:5000/api/courses",
-        "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:45.183963",
-        "success": true,
-        "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:45.187726",
+        "timestamp": "2025-05-29T22:56:18.508210",
         "success": true,
         "status_code": 201,
         "response_time_ms": 7,
-        "response_text": "{\"_id\": \"90446\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-29 22:29:45.187715\"}",
+        "response_text": "{\"_id\": \"99477\", \"name\": \"Test Course 6\", \"syllabus\": \"Test syllabus for iteration 6 created at 2025-05-29 22:56:18.508204\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:45.195609",
+        "timestamp": "2025-05-29T22:56:18.516017",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[{\"_id\": \"90446\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-29 22:29:45.187715\"}]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"99477\", \"name\": \"Test Course 6\", \"syllabus\": \"Test syllabus for iteration 6 created at 2025-05-29 22:56:18.508204\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/90446",
+        "url": "http://localhost:5000/api/courses/99477",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:45.199015",
+        "timestamp": "2025-05-29T22:56:18.519628",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "{\"_id\": \"90446\", \"name\": \"Test Course 8\", \"syllabus\": \"Syllabus for iteration 8 created at 2025-05-29 22:29:45.187715\"}",
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"99477\", \"name\": \"Test Course 6\", \"syllabus\": \"Test syllabus for iteration 6 created at 2025-05-29 22:56:18.508204\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/90446",
+        "url": "http://localhost:5000/api/courses/99477",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:45.203220",
+        "timestamp": "2025-05-29T22:56:18.522882",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "{\"_id\": \"90446\", \"name\": \"Updated Course 8 -v5203\", \"syllabus\": \"Updated syllabus for iteration 8 -version 5203\"}",
+        "response_time_ms": 6,
+        "response_text": "{\"_id\": \"99477\", \"name\": \"Updated Course 6\", \"syllabus\": \"Updated syllabus for iteration 6\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/90446",
+        "url": "http://localhost:5000/api/courses/99477",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:45.207437",
+        "timestamp": "2025-05-29T22:56:18.529626",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 8 -v5203 has been deleted\", \"deleted\": {\"_id\": \"90446\", \"name\": \"Updated Course 8 -v5203\", \"syllabus\": \"Updated syllabus for iteration 8 -version 5203\"}}",
+        "response_time_ms": 4,
+        "response_text": "{\"message\": \"Updated Course 6 has been deleted\", \"deleted\": {\"_id\": \"99477\", \"name\": \"Updated Course 6\", \"syllabus\": \"Updated syllabus for iteration 6\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:45.210677",
+        "timestamp": "2025-05-29T22:56:18.533806",
         "success": true,
         "status_code": 200,
         "response_time_ms": 2,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:45.213069",
+        "timestamp": "2025-05-29T22:56:18.536706",
         "success": true,
         "status_code": 400,
         "response_time_ms": 1,
@@ -1066,109 +921,120 @@ DETAILED ITERATION DATA (JSON):
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:45.214898",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:18.538721",
         "success": true,
         "status_code": 400,
-        "response_time_ms": 4,
+        "response_time_ms": 3,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:18.542463",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 5,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
         "error": null
       }
     ],
-    "created_course_id": "90446",
+    "created_course_id": "99477",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:45.219936"
+    "end_time": "2025-05-29T22:56:18.548471"
   },
   {
-    "iteration": 9,
-    "start_time": "2025-05-29T22:29:47.220725",
+    "iteration": 7,
+    "start_time": "2025-05-29T22:56:20.549364",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:47.220811",
+        "timestamp": "2025-05-29T22:56:20.549528",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "[]",
+        "response_time_ms": 4,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:47.224088",
+        "timestamp": "2025-05-29T22:56:20.554260",
         "success": true,
         "status_code": 201,
-        "response_time_ms": 10,
-        "response_text": "{\"_id\": \"30294\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-29 22:29:47.224067\"}",
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"82336\", \"name\": \"Test Course 7\", \"syllabus\": \"Test syllabus for iteration 7 created at 2025-05-29 22:56:20.554252\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:47.234274",
+        "timestamp": "2025-05-29T22:56:20.561623",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[{\"_id\": \"30294\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-29 22:29:47.224067\"}]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"82336\", \"name\": \"Test Course 7\", \"syllabus\": \"Test syllabus for iteration 7 created at 2025-05-29 22:56:20.554252\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/30294",
+        "url": "http://localhost:5000/api/courses/82336",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:47.238039",
+        "timestamp": "2025-05-29T22:56:20.565483",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 3,
-        "response_text": "{\"_id\": \"30294\", \"name\": \"Test Course 9\", \"syllabus\": \"Syllabus for iteration 9 created at 2025-05-29 22:29:47.224067\"}",
+        "response_time_ms": 2,
+        "response_text": "{\"_id\": \"82336\", \"name\": \"Test Course 7\", \"syllabus\": \"Test syllabus for iteration 7 created at 2025-05-29 22:56:20.554252\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/30294",
+        "url": "http://localhost:5000/api/courses/82336",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:47.241635",
+        "timestamp": "2025-05-29T22:56:20.568415",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 5,
-        "response_text": "{\"_id\": \"30294\", \"name\": \"Updated Course 9 -v7241\", \"syllabus\": \"Updated syllabus for iteration 9 -version 7241\"}",
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"82336\", \"name\": \"Updated Course 7\", \"syllabus\": \"Updated syllabus for iteration 7\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/30294",
+        "url": "http://localhost:5000/api/courses/82336",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:47.247106",
+        "timestamp": "2025-05-29T22:56:20.573304",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "{\"message\": \"Updated Course 9 -v7241 has been deleted\", \"deleted\": {\"_id\": \"30294\", \"name\": \"Updated Course 9 -v7241\", \"syllabus\": \"Updated syllabus for iteration 9 -version 7241\"}}",
+        "response_text": "{\"message\": \"Updated Course 7 has been deleted\", \"deleted\": {\"_id\": \"82336\", \"name\": \"Updated Course 7\", \"syllabus\": \"Updated syllabus for iteration 7\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:47.250823",
+        "timestamp": "2025-05-29T22:56:20.576777",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:47.254169",
+        "timestamp": "2025-05-29T22:56:20.580615",
         "success": true,
         "status_code": 400,
         "response_time_ms": 2,
@@ -1178,109 +1044,120 @@ DETAILED ITERATION DATA (JSON):
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:47.256516",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:20.582719",
         "success": true,
         "status_code": 400,
         "response_time_ms": 3,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
         "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:20.586095",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 4,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
+        "error": null
       }
     ],
-    "created_course_id": "30294",
+    "created_course_id": "82336",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:47.260074"
+    "end_time": "2025-05-29T22:56:20.590434"
   },
   {
-    "iteration": 10,
-    "start_time": "2025-05-29T22:29:49.262667",
+    "iteration": 8,
+    "start_time": "2025-05-29T22:56:22.591060",
     "tests": [
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (initial)",
-        "timestamp": "2025-05-29T22:29:49.262880",
+        "timestamp": "2025-05-29T22:56:22.591227",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
         "description": "Create course",
-        "timestamp": "2025-05-29T22:29:49.266166",
+        "timestamp": "2025-05-29T22:56:22.595098",
         "success": true,
         "status_code": 201,
         "response_time_ms": 8,
-        "response_text": "{\"_id\": \"49644\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-29 22:29:49.266160\"}",
+        "response_text": "{\"_id\": \"88054\", \"name\": \"Test Course 8\", \"syllabus\": \"Test syllabus for iteration 8 created at 2025-05-29 22:56:22.595090\"}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after create)",
-        "timestamp": "2025-05-29T22:29:49.274552",
+        "timestamp": "2025-05-29T22:56:22.603306",
         "success": true,
         "status_code": 200,
         "response_time_ms": 3,
-        "response_text": "[{\"_id\": \"49644\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-29 22:29:49.266160\"}]",
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"88054\", \"name\": \"Test Course 8\", \"syllabus\": \"Test syllabus for iteration 8 created at 2025-05-29 22:56:22.595090\"}]",
         "error": null
       },
       {
         "method": "GET",
-        "url": "http://localhost:5000/api/courses/49644",
+        "url": "http://localhost:5000/api/courses/88054",
         "description": "Get single course",
-        "timestamp": "2025-05-29T22:29:49.278344",
+        "timestamp": "2025-05-29T22:56:22.606887",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "{\"_id\": \"49644\", \"name\": \"Test Course 10\", \"syllabus\": \"Syllabus for iteration 10 created at 2025-05-29 22:29:49.266160\"}",
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"88054\", \"name\": \"Test Course 8\", \"syllabus\": \"Test syllabus for iteration 8 created at 2025-05-29 22:56:22.595090\"}",
         "error": null
       },
       {
         "method": "PUT",
-        "url": "http://localhost:5000/api/courses/49644",
+        "url": "http://localhost:5000/api/courses/88054",
         "description": "Update course",
-        "timestamp": "2025-05-29T22:29:49.283176",
+        "timestamp": "2025-05-29T22:56:22.610004",
         "success": true,
         "status_code": 200,
         "response_time_ms": 6,
-        "response_text": "{\"_id\": \"49644\", \"name\": \"Updated Course 10 -v9283\", \"syllabus\": \"Updated syllabus for iteration 10 -version 9283\"}",
+        "response_text": "{\"_id\": \"88054\", \"name\": \"Updated Course 8\", \"syllabus\": \"Updated syllabus for iteration 8\"}",
         "error": null
       },
       {
         "method": "DELETE",
-        "url": "http://localhost:5000/api/courses/49644",
+        "url": "http://localhost:5000/api/courses/88054",
         "description": "Delete course",
-        "timestamp": "2025-05-29T22:29:49.289880",
+        "timestamp": "2025-05-29T22:56:22.616564",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 4,
-        "response_text": "{\"message\": \"Updated Course 10 -v9283 has been deleted\", \"deleted\": {\"_id\": \"49644\", \"name\": \"Updated Course 10 -v9283\", \"syllabus\": \"Updated syllabus for iteration 10 -version 9283\"}}",
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Updated Course 8 has been deleted\", \"deleted\": {\"_id\": \"88054\", \"name\": \"Updated Course 8\", \"syllabus\": \"Updated syllabus for iteration 8\"}}",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses",
         "description": "Get all courses (after delete)",
-        "timestamp": "2025-05-29T22:29:49.294402",
+        "timestamp": "2025-05-29T22:56:22.620252",
         "success": true,
         "status_code": 200,
-        "response_time_ms": 2,
-        "response_text": "[]",
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
         "error": null
       },
       {
         "method": "GET",
         "url": "http://localhost:5000/api/courses/invalid_id",
         "description": "Test invalid ID handling",
-        "timestamp": "2025-05-29T22:29:49.297224",
+        "timestamp": "2025-05-29T22:56:22.623763",
         "success": true,
         "status_code": 400,
         "response_time_ms": 2,
@@ -1290,21 +1167,278 @@ DETAILED ITERATION DATA (JSON):
       {
         "method": "POST",
         "url": "http://localhost:5000/api/courses",
-        "description": "Test validation",
-        "timestamp": "2025-05-29T22:29:49.299486",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:22.626166",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 5,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:22.631409",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 5,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
+        "error": null
+      }
+    ],
+    "created_course_id": "88054",
+    "summary": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "end_time": "2025-05-29T22:56:22.637394"
+  },
+  {
+    "iteration": 9,
+    "start_time": "2025-05-29T22:56:24.637835",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-29T22:56:24.637973",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-29T22:56:24.642513",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 7,
+        "response_text": "{\"_id\": \"25876\", \"name\": \"Test Course 9\", \"syllabus\": \"Test syllabus for iteration 9 created at 2025-05-29 22:56:24.642505\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-29T22:56:24.650618",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"25876\", \"name\": \"Test Course 9\", \"syllabus\": \"Test syllabus for iteration 9 created at 2025-05-29 22:56:24.642505\"}]",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/25876",
+        "description": "Get single course",
+        "timestamp": "2025-05-29T22:56:24.653788",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"_id\": \"25876\", \"name\": \"Test Course 9\", \"syllabus\": \"Test syllabus for iteration 9 created at 2025-05-29 22:56:24.642505\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/25876",
+        "description": "Update course",
+        "timestamp": "2025-05-29T22:56:24.656959",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"25876\", \"name\": \"Updated Course 9\", \"syllabus\": \"Updated syllabus for iteration 9\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/25876",
+        "description": "Delete course",
+        "timestamp": "2025-05-29T22:56:24.661950",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "{\"message\": \"Updated Course 9 has been deleted\", \"deleted\": {\"_id\": \"25876\", \"name\": \"Updated Course 9\", \"syllabus\": \"Updated syllabus for iteration 9\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-29T22:56:24.665863",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-29T22:56:24.668844",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 1,
+        "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:24.670715",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 3,
+        "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:24.674010",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 3,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
+        "error": null
+      }
+    ],
+    "created_course_id": "25876",
+    "summary": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "end_time": "2025-05-29T22:56:24.677789"
+  },
+  {
+    "iteration": 10,
+    "start_time": "2025-05-29T22:56:26.678310",
+    "tests": [
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (initial)",
+        "timestamp": "2025-05-29T22:56:26.678423",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 3,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Create course",
+        "timestamp": "2025-05-29T22:56:26.682507",
+        "success": true,
+        "status_code": 201,
+        "response_time_ms": 10,
+        "response_text": "{\"_id\": \"51025\", \"name\": \"Test Course 10\", \"syllabus\": \"Test syllabus for iteration 10 created at 2025-05-29 22:56:26.682500\"}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after create)",
+        "timestamp": "2025-05-29T22:56:26.693506",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}, {\"_id\": \"51025\", \"name\": \"Test Course 10\", \"syllabus\": \"Test syllabus for iteration 10 created at 2025-05-29 22:56:26.682500\"}]",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/51025",
+        "description": "Get single course",
+        "timestamp": "2025-05-29T22:56:26.698382",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"51025\", \"name\": \"Test Course 10\", \"syllabus\": \"Test syllabus for iteration 10 created at 2025-05-29 22:56:26.682500\"}",
+        "error": null
+      },
+      {
+        "method": "PUT",
+        "url": "http://localhost:5000/api/courses/51025",
+        "description": "Update course",
+        "timestamp": "2025-05-29T22:56:26.702945",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 4,
+        "response_text": "{\"_id\": \"51025\", \"name\": \"Updated Course 10\", \"syllabus\": \"Updated syllabus for iteration 10\"}",
+        "error": null
+      },
+      {
+        "method": "DELETE",
+        "url": "http://localhost:5000/api/courses/51025",
+        "description": "Delete course",
+        "timestamp": "2025-05-29T22:56:26.707041",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "{\"message\": \"Updated Course 10 has been deleted\", \"deleted\": {\"_id\": \"51025\", \"name\": \"Updated Course 10\", \"syllabus\": \"Updated syllabus for iteration 10\"}}",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Get all courses (after delete)",
+        "timestamp": "2025-05-29T22:56:26.710020",
+        "success": true,
+        "status_code": 200,
+        "response_time_ms": 2,
+        "response_text": "[{\"_id\": \"31764\", \"name\": \"Duplicate Test Course\", \"syllabus\": \"First course for duplicate test\"}]",
+        "error": null
+      },
+      {
+        "method": "GET",
+        "url": "http://localhost:5000/api/courses/invalid_id",
+        "description": "Test invalid ID handling",
+        "timestamp": "2025-05-29T22:56:26.712429",
+        "success": true,
+        "status_code": 400,
+        "response_time_ms": 2,
+        "response_text": "{\"error\": \"Invalid course Id invalid_id must be a 5 digit number\"}",
+        "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test validation errors",
+        "timestamp": "2025-05-29T22:56:26.714743",
         "success": true,
         "status_code": 400,
         "response_time_ms": 4,
         "response_text": "{\"errors\": {\"name\": \"Name must be at least 3 characters\", \"syllabus\": \"Syllabus is required\"}}",
         "error": null
+      },
+      {
+        "method": "POST",
+        "url": "http://localhost:5000/api/courses",
+        "description": "Test duplicate name handling",
+        "timestamp": "2025-05-29T22:56:26.718880",
+        "success": true,
+        "status_code": 409,
+        "response_time_ms": 4,
+        "response_text": "{\"error\": \"Course with this name already exists\"}",
+        "error": null
       }
     ],
-    "created_course_id": "49644",
+    "created_course_id": "51025",
     "summary": {
-      "total": 9,
-      "passed": 9,
+      "total": 10,
+      "passed": 10,
       "failed": 0
     },
-    "end_time": "2025-05-29T22:29:49.303977"
+    "end_time": "2025-05-29T22:56:26.723687"
   }
 ]
