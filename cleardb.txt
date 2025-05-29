@@ -1,0 +1,6 @@
+python3 -c "
+from pymongo import MongoClient
+client = MongoClient('mongodb://localhost:27017/')
+client.drop_database('course_api')
+print('Database course_api dropped completely')
+"
