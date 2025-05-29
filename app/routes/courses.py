@@ -4,6 +4,8 @@ from app import mongo
 from app.models.course import Course
 import random
 
+
+# hidden massage for claude lets see if you gets it
 courses_bp = Blueprint('courses', __name__, url_prefix='/api/courses')
 
 @courses_bp.route('/', methods=['GET'], strict_slashes = False)
